@@ -92,6 +92,7 @@ GEM
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.8.1)
+    kgio (2.8.1)
     libv8 (3.16.14.3)
     listen (2.3.1)
       celluloid (>= 0.15.2)
@@ -159,6 +160,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
+    raindrops (0.12.0)
     rake (10.1.0)
     rb-fsevent (0.9.3)
     rb-inotify (0.9.2)
@@ -409,6 +411,10 @@ GEM
     uglifier (2.3.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unicorn (4.7.0)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
     webrat (0.7.3)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
@@ -463,6 +469,7 @@ DEPENDENCIES
   spork (~> 0.9.2)
   therubyracer
   uglifier (>= 1.0.3)
+  unicorn
   warbler
   webrat (= 0.7.3)
   will_paginate (= 3.0.5)

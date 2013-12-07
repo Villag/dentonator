@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'pg'
 
 # Run-time dependencies
@@ -29,8 +30,7 @@ gem 'progress_bar', '1.0.0'
 gem 'exception_notification', '2.6.1'
 gem 'font-awesome-rails', '3.2.1.3'
 gem 'rails_12factor'
-
-ruby '1.9.3'
+gem 'unicorn'
 
 # gem 'paper_trail_manager', :git => 'https://github.com/igal/paper_trail_manager.git'
 # gem 'paper_trail_manager', :path => '../paper_trail_manager'
