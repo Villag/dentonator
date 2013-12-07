@@ -9,7 +9,6 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-config.assets.initialize_on_precompile = false
 
 module Calagator
   class Application < Rails::Application
@@ -46,6 +45,8 @@ module Calagator
     require 'will_paginate/array'
 
     #---[ Plugins ]---------------------------------------------------------
+
+    config.assets.initialize_on_precompile = false
 
     # Load these plugins first, or they won't work
     config.plugins = [
