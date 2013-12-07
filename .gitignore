@@ -35,6 +35,7 @@ vagrant/cookbooks/vagrant/recipes/local.rb
 vendor/plugins/acts_as_solr/solr/logs/*
 vendor/plugins/acts_as_solr/solr/solr/data/*
 vendor/plugins/acts_as_solr/solr/tmp/*
+public/assets/
 .ruby-gemset
 .ruby-version
 .bundle
