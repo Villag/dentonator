@@ -44,19 +44,7 @@ raise "Can't find database configuration at: #{filename}" unless File.exist?(fil
 databases = YAML.load(ERB.new(File.read(filename)).result)
 railsenv = ENV['RAILS_ENV'] || 'development'
 raise "Can't find database configuration for environment '#{railsenv}' in: #{filename}" unless databases[railsenv]
-adapter = databases[railsenv]['adapter']
-raise "Can't find database adapter for environment '#{railsenv}' in: #{filename}" unless databases[railsenv]['adapter']
-case adapter
-when 'pg', 'postgresql'
-  gem 'pg'
-when 'mysql2'
-  gem 'mysql2', '~> 0.3.11'
-when 'jdbcsqlite3'
-  gem 'jdbc-sqlite3'
-  gem 'activerecord-jdbcsqlite3-adapter'
-else
-  gem adapter
-end
+gem 'pg'
 
 # Run-time dependencies
 gem 'rails', '3.2.16'
