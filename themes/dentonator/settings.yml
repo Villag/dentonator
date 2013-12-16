@@ -1,11 +1,11 @@
 # Site's name:
-name: 'Calagator'
+name: 'Dentonator'
 
 # Site's tagline:
-tagline: "Portland's Tech Calendar"
+tagline: "Denton's Tech Calendar"
 
 # Site's URL with trailing slash:
-url: 'http://calagator.org/'
+url: 'http://dentonator.herokuapp.org/'
 
 # Default timezone, run "rake -D time" for information on how to display known timezones:
 timezone: 'Pacific Time (US & Canada)'
