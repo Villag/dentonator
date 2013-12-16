@@ -14,6 +14,7 @@ timezone: 'Pacific Time (US & Canada)'
 precompile_assets:
   - 'mobile.css'
   - 'print.css'
+  - 'theme.css'
 
 # Map to display on /venues page:
 venues_map_options:
