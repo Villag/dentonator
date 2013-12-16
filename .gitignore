@@ -38,3 +38,4 @@ vendor/plugins/acts_as_solr/solr/tmp/*
 .ruby-gemset
 .ruby-version
 .bundle
+public/assets/
