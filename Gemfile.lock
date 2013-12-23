@@ -63,6 +63,7 @@ GEM
     factory_girl_rails (1.7.0)
       factory_girl (~> 2.6.0)
       railties (>= 3.0.0)
+    fast_git_deploy (0.2.2)
     fattr (2.2.1)
     ffi (1.9.3)
     ffi2-generators (0.1.1)
@@ -435,6 +436,7 @@ DEPENDENCIES
   database_cleaner (~> 0.8.0)
   exception_notification (= 2.6.1)
   factory_girl_rails (= 1.7.0)
+  fast_git_deploy
   font-awesome-rails (= 3.2.1.3)
   formtastic (= 2.2.1)
   geokit (= 1.6.5)
