@@ -43,7 +43,7 @@ namespace :deploy do
   end
   task :stop, :roles => :app, :except => { :no_release => true } do
     pid = `cat #{unicorn_pid}`
-    run "#{try_sudo} kill #{pid}" unless pid.blank?
+    run "#{try_sudo} kill #{pid}" unless pid.empty?
   end
   task :graceful_stop, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} kill -s QUIT `cat #{unicorn_pid}`"
